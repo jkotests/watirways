@@ -4,5 +4,5 @@ convert_html/
 preview/
 published/
 # Might include later:
-specs/
+spec/
 tools/
