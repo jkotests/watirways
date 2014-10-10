@@ -16,6 +16,7 @@ locator/locator_relation-sibling.md
 locator/locator_relation-traverse.md
 inspect_element/introduction.md
 inspect_element/text.md
+inspect_element/attribute_value.md
 inspect_element/computed_style.md
 inspect_element/existence.md
 element_collection/introduction.md
