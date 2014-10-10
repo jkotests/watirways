@@ -1,4 +1,4 @@
-## Existence
+## Existence and visibility
  
 Watir has three methods to check whether an elements exists on the page:
 
@@ -34,7 +34,6 @@ When each method (exists?, present?, visible?) is run for the different elements
 | Non-Existent (browser.div(:id => '3')) | false | exception | false |
 
 Element#exists? checks if the element is in the DOM (or HTML). Element#visible? checks if the element can be seen by the user, but throws an exception if the element is not in the DOM. Element#present? is the same as Element#visible? except that it returns false, instead of an exception, when the element is not in the DOM.
-Conclusion
 
 While the three methods are definitely different, I think, at least from my experience, that you should typically be using Element#present?.
 
