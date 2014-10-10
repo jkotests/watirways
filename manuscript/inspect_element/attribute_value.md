@@ -11,6 +11,7 @@ Watir provides 2 ways to get attribute values:
 
 For attributes that are defined in the HTML specification, there is a corresponding method that returns the attribute value. In most cases, the attribute name and the method name are exactly the same. However, Ruby naming conventions are applied in some situations.
 
+{width="wide"}
 | Scenario | Naming Rule | Example Attribute | Corresponding Method |
 |----------|-------------|-------------------|----------------------|
 | Single word attribute | Match attribute name | id | id |
