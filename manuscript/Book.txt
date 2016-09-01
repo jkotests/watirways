@@ -21,6 +21,7 @@ inspect_element/computed_style.md
 inspect_element/existence.md
 form/introduction.md
 form/text_field.md
+form/select_list.md
 form/checkbox.md
 form/radio.md
 element_collection/introduction.md
