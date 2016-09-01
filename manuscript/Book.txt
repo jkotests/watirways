@@ -27,4 +27,3 @@ form/radio.md
 element_collection/introduction.md
 element_collection/counting.md
 troubleshooting/introduction.md
-troubleshooting/unable_to_locate_element.md
