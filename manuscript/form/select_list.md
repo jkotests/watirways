@@ -1,6 +1,7 @@
 ## Select List
 
 A select list, often called a dropdown, consists of:
+
 * A select element - the overall control
 * Option elements - the items that the user picks
 
