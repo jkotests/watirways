@@ -23,5 +23,6 @@ browser.div.style('color')
 ~~~~~~~~
 
 Note:
+
 * The shorthand CSS properties (e.g. background, font, etc.) are not supported. The longhand properties should be used instead - eg background-color.
 * Depending on the browser, the formatting of the property may vary.
