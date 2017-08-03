@@ -1,6 +1,6 @@
 ## Label
 
-Elements can also be located by their associated label element's text. Note that this only works in Watir-Webdriver.
+Elements can also be located by their associated label element's text.
 
 In the following html, the input field has an associated label with the text "First Name:".
 

@@ -18,9 +18,9 @@ browser.div(:attribute_name => "attribute_value")
 
 ### Standard attributes
 
-The html specifications only allow certain attributes to be included on an element. In watir-webdriver, any of these attributes can be used to locate the element. In watir-classic, only the more common attributes are supported (the other attributes must be treated like non-standard attributes).
+The HTML specifications only allow certain attributes to be included on an element. In Watir, any of these attributes can be used to locate the element.
 
-As an example, consider the id attribute used in the following html. The uniqueness of this attribute makes it an ideal unambiguous locator.
+As an example, consider the id attribute used in the following HTML. The uniqueness of this attribute makes it an ideal unambiguous locator.
 
 {lang="html"}
 ~~~~~~~~
@@ -51,7 +51,7 @@ browser.span(:id => /area/).text
 
 If something on the page looks different (ex the text size, the background colour, etc), it means that a style has been applied to the element. Often, to reduce maintenance of the page, developers will extract these styles into a style sheet that defines groups of styles. These groups of styles are called classes. An element can use one or more classes by defining the class attribute.
 
-While the class is a standard html attribute, there is special handling by Watir. Consider the following html:
+While the class is a standard HTML attribute, there is special handling by Watir. Consider the following HTML:
 
 {lang="html"}
 ~~~~~~~~
@@ -82,7 +82,7 @@ browser.span(:class => /bo/).text
 
 ### Data attributes
 
-In some cases, the standard html attributes do not provide enough information for an application. Custom data attributes allow additional information to be added to the element, while still being valid html markup.
+In some cases, the standard HTML attributes do not provide enough information for an application. Custom data attributes allow additional information to be added to the element, while still being valid HTML markup.
 
 For example, a div element that represents a person might use custom data attributes to store the person's height and weight.
 
@@ -105,9 +105,9 @@ Locate an element based on a partial match of the attribute value:
 
 ### Custom attributes
 
-Some applications will still be using attributes that are not in the html specifications (likely due to the application being developed before data attributes were introduced). These attributes are not directly supported by watir as locators. In the case of watir-classic, this also includes some of the defined but less common attributes.
+Some applications will still be using attributes that are not in the HTML specifications (likely due to the application being developed before data attributes were introduced). These attributes are not directly supported by Watir as locators.
 
-For these attributes, you can use a css or xpath selector.
+For these attributes, you can use a CSS or XPath selector.
 
 {lang="html"}
 ~~~~~~~~
@@ -118,7 +118,7 @@ For these attributes, you can use a css or xpath selector.
 </div>
 ~~~~~~~~
 
-In css-locators, the square brackets are used for matching attributes.
+In CSS-locators, the square brackets are used for matching attributes.
 
 To locate a span that has the customattribute attribute, of any value:
 
@@ -136,7 +136,7 @@ browser.span(:css, 'span[customattribute="custom2"]').text
 #=> "Custom Attribute 2"
 ~~~~~~~~
 
-Xpath is similar to css-locators, however the attribute name must be prefixed with an at symbol (@):
+XPath is similar to CSS-locators, however the attribute name must be prefixed with an at symbol (@):
 
 {lang="ruby"}
 ~~~~~~~~

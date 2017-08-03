@@ -73,12 +73,7 @@ Note that the object type returned by the method will depend on the attribute:
 
 ### Custom attributes
 
-There will be some attributes that do not have an associated method:
-
-* Attributes that are not defined in the HTML specification.
-* Standard attribute methods that are not yet implemented in Watir-Classic.
-
-In these cases, the _attribute_value_ method is required.
+Attributes that are not defined in the HTML specification will not have an associated method defined. In these cases, the _attribute_value_ method is required.
 
 Given an element with a custom attribute:
 
