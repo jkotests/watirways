@@ -2,7 +2,7 @@
 
 In HTML, frames (`<frame>` and `<iframe>` elements) allow a page to be embedded in a page. This special behaviour provides some complications in Watir.
 
-When using a browser's developer tools to inspect elements in a frame, you will see the hosting page (`html` element`), the `iframe` and then the nested page (another `html` element):
+When using a browser's developer tools to inspect elements in a frame, you will see the hosting page (`html` element), the frame and then the nested page (another `html` element):
 
 {lang="html"}
 ~~~~~~~~	
