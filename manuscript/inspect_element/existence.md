@@ -2,9 +2,9 @@
  
 Watir has three methods to check whether an elements exists on the page:
 
-* exists? – Returns true if the element exists (in the DOM).
+* exists? - Returns true if the element exists (in the DOM).
 * visible? - Returns true if the element is visible to the user.
-* present? – Returns true if the element exists and is visible to the user.
+* present? - Returns true if the element exists and is visible to the user.
 
 These methods are called similar to:
 

@@ -19,21 +19,21 @@ There are two element type methods, for each supported element, that correlate t
   * Singular - This version returns the element.
   * Plual - This version returns the element collection.
 
-For example, the _div_ method, which is singular, will tell Watir to find the first div element on the page.
+For example, the `div` method, which is singular, will tell Watir to find the first `div` element on the page.
 
 {lang="ruby"}
 ~~~~~~~~
 browser.div
 ~~~~~~~~
 
-The pluralization of _div_ is _divs_, which will return all div elements on the page.
+The pluralization of `div` is `divs`, which will return all `div` elements on the page.
 
 {lang="ruby"}
 ~~~~~~~~
 browser.divs
 ~~~~~~~~
 
-Note that the pluralized version is generally the singular version with an 's' added to the end. However, following English conventions, there will be some element types that have 'es' added to the end or have the ending 'y' replaced by 'ies'. 
+Note that the pluralized version is generally the singular version with a "s" added to the end. However, following English conventions, there will be some element types that have "es" added to the end or have the ending "y" replaced by "ies". 
 
 | Scenario | HTML Element | Singular | Plural | 
 |----------|--------------|----------|--------|
@@ -41,11 +41,11 @@ Note that the pluralized version is generally the singular version with an 's' a
 | Add 'es' | \<progress\> | progress | progresses |
 | Add 'ies' | \<summary\> | summary | summaries |
 
-### Standard html element methods
+### Standard HTML element methods
 
-In general, the singular element type method is the same as the html element tag.
+In general, the singular element type method is the same as the HTML element tag.
 
-For example, the html ul element:
+For example, the HTML `ul` element:
 
 {lang="html"}
 ~~~~~~~~
@@ -55,7 +55,7 @@ For example, the html ul element:
 </ul>
 ~~~~~~~~
 
-Would be retrieved by Watir's _ul_ method.
+Would be retrieved by Watir's `ul` method.
 
 {lang="ruby"}
 ~~~~~~~~
@@ -77,11 +77,11 @@ The following table lists the methods to locate some common element types.
 
 Watir defines additional element type methods that: 
 
-  * Are more specific. For example, _\<input type="checkbox"\>_ can be located using _browser.checkbox_ instead of using _browser.input_ (which would include non-checkbox inputs).
-  * Makes visually similar elements equivalent. For example, html has a variety of buttons - _\<button\>_, _\<input type="button"\>_, etc. They are all equivalent in Watir as each is located with the same _browser.button_ method.
-  * Provide more readable names through aliases. For example, _\<a\>_ elements can be located via _browser.a_ or _browser.link_.
+  * Are more specific. For example, `\<input type="checkbox"\>` can be located using `browser.checkbox` instead of using `browser.input(type: 'checkbox')`.
+  * Makes visually similar elements equivalent. For example, HTML has a variety of buttons - `\<button\>`, `\<input type="button"\>`, etc. They are all equivalent in Watir as each is located with the same `browser.button` method.
+  * Provide more readable names through aliases. For example, `\<a\>` elements can be located via `browser.a` or `browser.link`.
 
-The following table lists the convenience element type methods. 
+The following table lists the common convenience methods. 
 
 | Element Method | Collection Method | HTML Elements Matched |
 |----------------|-------------------|-----------------------|
@@ -97,9 +97,6 @@ The following table lists the convenience element type methods.
 |----------------|-------------------|-----------------------|
 | file_field | file_fields | \<input type="file"\> |
 |----------------|-------------------|-----------------------|
-| frame | frames | \<frame\> |
-| | | \<iframe\> |
-|----------------|-------------------|-----------------------|
 | hidden | hiddens | \<input type="hidden"\> |
 |----------------|-------------------|-----------------------|
 | image | images | \<img\> |
@@ -112,12 +109,11 @@ The following table lists the convenience element type methods.
 |----------------|-------------------|-----------------------|
 | text_field | text_fields | \<input type="password"\> |
 | | | \<input type="text"\> |
-| | | \<textarea\> |
 |----------------|-------------------|-----------------------|
 
 ### Custom elements
 
-Some applications use element types that are not in the specifications.
+Some applications use element types that are not in the HTML specifications.
 
 {lang="html"}
 ~~~~~~~~	
@@ -128,9 +124,7 @@ Some applications use element types that are not in the specifications.
 </li>
 ~~~~~~~~
 
-The small element type is not defined in the html specifications. As a result, Watir does not define a _small_ method – ie you cannot do browser.small.click.
-
-To locate these elements, you can use the genaric element method with a tag_name locator.
+The `small` element type is not defined in the specifications. As a result, Watir does not define a _small_ method - ie you cannot do `browser.small.click`. To locate these elements, you can use the genaric element method with a `:tag_name` locator.
 
 {lang="ruby"}
 ~~~~~~~~
