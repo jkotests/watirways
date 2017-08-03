@@ -14,6 +14,7 @@ locator/locator_relation-ancestor.md
 locator/locator_relation-descendant.md
 locator/locator_relation-sibling.md
 locator/locator_relation-traverse.md
+locator/locator_relation-frames.md
 inspect_element/introduction.md
 inspect_element/text.md
 inspect_element/attribute_value.md
